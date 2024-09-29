@@ -9,12 +9,15 @@ function App() {
     <div>
       <Routes>
         <Route path='/' element={<Index />} />
-        <Route path='/about' element={<About />} />
+        <Route path='/about/:id' element={<About />} />
       </Routes>
 
       <Link to='/'>Home</Link>
       <br />
-      <Link to='/about'>About</Link>
+      <Link to='/about/1'>About 1</Link>
+      <br />
+      <Link to='/about/2'>About 2</Link>
+
     </div>
   )
 }
